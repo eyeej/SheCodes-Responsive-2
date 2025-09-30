@@ -1,7 +1,5 @@
-h1 {
-font-family: "Poppins", sans-serif;
-font-style: normal;
-font-size: 96px;
-font-weight: 700;
-line-height: 144%;
+header {
+    background-image:url('../images/dictionaryheader.jpg');
+    background-repeat: none;
+    background-size: cover;
 }
