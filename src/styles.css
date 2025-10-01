@@ -8,17 +8,34 @@ body {
 
 .container {
     max-width: 1400px;
-    margin: 0 auto;
+   
+
+}
+
+.image-responsive {
+    max-width: 100%;
+    display: block;
+    padding: 20px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 64px;
+    
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px 0;
 }
 
 header {
@@ -59,9 +76,15 @@ header a {
     display: inline-block; 
 }
 
+main {
+    background-color: white;
+}
+
 footer {
     color: white;
     background-image: url('../images/responsivefooter.jpg');
+    background-repeat: none;
+    background-size: cover;
 }
 
 footer h3 {
