@@ -24,6 +24,10 @@ body {
     grid-gap: 20px;
 }
 
+.grid-gap {
+    grid-gap: 0;
+}
+
 .grid-2-columns {
     grid-template-columns: 1fr 1fr;
 }
@@ -38,6 +42,11 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+    width: 100%;
+    aspect-ratio: 1 /1;
+}
+
 .card {
     background: #fff;
     margin: 0 auto;
@@ -45,6 +54,10 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     padding: 16px;
 
+}
+
+.card-header.grid {
+    grid-gap: 0;
 }
 
 .card-body {
@@ -213,5 +226,13 @@ footer a {
 
     section {
         padding: 30px;
+    }
+
+    .card-header img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 16 / 9;
     }
 }
